@@ -1,0 +1,31 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "lemma_exploration"
+version = "0.0.1"
+description = "Neuro-symbolic lemma exploration of Isabelle theories"
+authors = [
+  { name = "Yousef Alhessi" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+requires-python = "~=3.12.0"
+
+
+[tool.ruff]
+src = ["lemma_exploration"]
+include = ["pyproject.toml", "lemma_exploration/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["lemma_exploration"]
+force-sort-within-sections = true
+
