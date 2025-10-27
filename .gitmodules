@@ -1,3 +1,7 @@
 [submodule "isabelle-connector"]
 	path = isabelle-connector
 	url = git@github.com:yalhessi/isabelle-connector.git
+
+[submodule "lemmanaid-notebooks"]
+	path = notebooks
+	url = git@github.com:yalhessi/lemmanaid-notebooks.git
