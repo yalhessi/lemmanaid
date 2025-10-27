@@ -1,0 +1,3 @@
+[submodule "isabelle-connector"]
+	path = isabelle-connector
+	url = git@github.com:yalhessi/isabelle-connector.git
